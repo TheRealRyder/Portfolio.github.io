@@ -29,10 +29,71 @@
             </nav>
             <div class="header-text">
                 <p> Web Designer</p>
-                <h1>Hi, I'm Eden Lee FRom Australia</h1>
+                <h1>Hi, I'm <span>Eden Lee</span><br> from Australia</h1>
             </div>
         </div>
     </div>
+
+    <!--------about----------->
+    <div id="about">
+        <div class=""container">
+            <div Class="row">
+                <div class = "about-col-1">
+                    <img src="images/user.png">
+                    <h1>About Me</h1>
+                </div>
+                <div class = "about-col-1">
+                    <h1 class="sub-title"></h1>
+                    <p>
+                        about me and stuff
+                
+                    </p>
+                    <div class="tab-titles">
+                        <p class = "tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class = "tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class = "tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills" >
+                        <ul>
+                            <li><span>Web design</span><br> Designing Wep/App interfaces </li>
+                            <li><span>Web design</span><br> Designing Wep/App interfaces </li>
+                            <li><span>Web design</span><br> Designing Wep/App interfaces </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Web design</span><br> Designing Wep/App interfaces </li>
+                            <li><span>Web design</span><br> Designing Wep/App interfaces </li>
+                            <li><span>Web design</span><br> Designing Wep/App interfaces </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Web design</span><br> Designing Wep/App interfaces </li>
+                            <li><span>Web design</span><br> Designing Wep/App interfaces </li>
+                            <li><span>Web design</span><br> Designing Wep/App interfaces </li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+        
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("äctive-link");
+            document.getElementById(tabname).classList.add("");
+        }
+    </script>
     </body>
 </html>
 
