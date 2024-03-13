@@ -14,20 +14,26 @@
         <script src="https://kit.fontawesome.com/fac4bc31d1.js" crossorigin="anonymous"></script>
     </head>
     <body>
+    <div class="logo-container">
+            <img src="images/logo.png" class="logo">
+    </div>
+    
+    <div>
+        <nav>
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+    </div>
     <div id="header">
         <div class="container">
-            <nav>
-                <img src="images/logo.png" class="logo">
-                <ul id="sidemenu">
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
-                </ul>
-                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-            </nav>
+            
             <div class="header-text">
                     <p> Web Designer</p>
                     <h1>Hi, I'm <span>Eden Lee</span><br> from Australia</h1>
@@ -112,7 +118,7 @@
             <h1 class="sub-title">My Work</h1>
             <div class="work-list">
                 <div class="work">
-                    <img src="images/work-1.png">
+                    <img src="images/portfolio-1.png">
                     <div class="layer">
                         <h3> Portfolio Website</h3>
                         <p>this website is apart of my portfolio</p>
@@ -120,18 +126,18 @@
                     </div>
                 </div>
                 <div class="work">
-                    <img src="images/work-1.png">
+                    <img src="images/portfolio-2.png">
                     <div class="layer">
                         <h3> Northstar Mercades website</h3>
-                        <p>this website is apart of my portfolio</p>
+                        <p>website I co-designed</p>
                         <i class="fa-solid fa-link"></i>
                     </div>
                 </div>
                 <div class="work">
-                    <img src="images/work-1.png">
+                    <img src="images/portfolio-3.png">
                     <div class="layer">
                         <h3> Simple House evaluation software </h3>
-                        <p>this website is apart of my portfolio</p>
+                        <p>Java program I created for a house valuer which is used to aid in house evaluation</p>
                         <i class="fa-solid fa-link"></i>
                     </div>
                 </div>
@@ -200,10 +206,11 @@
     var sidemenu = document.getElementById("sidemenu");
 
     function openmenu(){
-        sidemenu.style.right = "0";
+        sidemenu.style.width = "200px"
+        sidemenu.style.right = "0px";
     }
     function closemenu(){
-        sidemenu.style.right = "-200";
+        sidemenu.style.right = "-200px";
     }
 </script>
 <!--google sheets-->
