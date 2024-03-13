@@ -11,38 +11,39 @@
             header, .intro, .projects, .contact { margin-bottom: 40px; }
         h2 { color: #333; }
         </style>
-        
+        <script src="https://kit.fontawesome.com/fac4bc31d1.js" crossorigin="anonymous"></script>
     </head>
     <body>
-       <div id="header">
+    <div id="header">
         <div class="container">
             <nav>
                 <img src="images/logo.png" class="logo">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
-                
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
                 </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
-                <p> Web Designer</p>
-                <h1>Hi, I'm <span>Eden Lee</span><br> from Australia</h1>
+                    <p> Web Designer</p>
+                    <h1>Hi, I'm <span>Eden Lee</span><br> from Australia</h1>
             </div>
         </div>
     </div>
 
     <!--------about----------->
     <div id="about">
-        <div class=""container">
-            <div Class="row">
+        <div class="container">
+            <div class="row">
                 <div class = "about-col-1">
                     <img src="images/user.png">
-                    <h1>About Me</h1>
                 </div>
-                <div class = "about-col-1">
+                <div class="about-col-2">
+                    <h1>About Me</h1>
                     <h1 class="sub-title"></h1>
                     <p>
                         about me and stuff
@@ -69,12 +70,113 @@
                     </div>
                     <div class="tab-contents" id="education">
                         <ul>
-                            <li><span>Web design</span><br> Designing Wep/App interfaces </li>
+                            <li><span>Queensland Academy of health science</span><br> Designing Wep/App interfaces </li>
                             <li><span>Web design</span><br> Designing Wep/App interfaces </li>
                             <li><span>Web design</span><br> Designing Wep/App interfaces </li>
                         </ul>
                     </div>
             </div>
+        </div>
+    </div>
+
+    <!-----------services---------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div class="service-titles">
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>description for webdesign.</p>
+                    <a href = "#">Learn more</a>
+                </div>
+                <div class="service-titles">
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>description for UI/UX design.</p>
+                    <a href = "#">Learn more</a>
+                </div>
+                <div class="service-titles">
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>App Design</h2>
+                    <p>description for app design.</p>
+                    <a href = "#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!----------portfolio------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3> Portfolio Website</h3>
+                        <p>this website is apart of my portfolio</p>
+                        <i class="fa-solid fa-link"></i>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3> Northstar Mercades website</h3>
+                        <p>this website is apart of my portfolio</p>
+                        <i class="fa-solid fa-link"></i>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3> Simple House evaluation software </h3>
+                        <p>this website is apart of my portfolio</p>
+                        <i class="fa-solid fa-link"></i>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!--------contact------>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 Class="sub-title">
+                        Contact Me
+                    </h1>
+                    <p> <i class="fa-solid fa-paper-plane"></i> eden@ryderlee.me</p>
+                    <p><i class="fa-solid fa-phone"></i> 0401708312</p>
+
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                   
+                        <a href=""><i class="fa-brands fa-linkedin"></i></i></a>
+                    </div>
+                    <!--
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                   
+                
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    </div>-->
+                    <a href="" class="btn btn2">Download Cv</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2"> Submit </button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © 2024 Eden Lee </p>
         </div>
     </div>
 
@@ -90,11 +192,41 @@
             for(tabcontent of tabcontents){
                 tabcontent.classList.remove("active-tab");
             }
-            event.currentTarget.classList.add("äctive-link");
-            document.getElementById(tabname).classList.add("");
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
         }
     </script>
-    </body>
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200";
+    }
+</script>
+<!--google sheets-->
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwKpjWjsx8grEw2N8poXc0vxpXD4oeQsKpm9pTm4ObUx7Mgnch11e7jEnjL5-JGzMjA2w/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg= document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
 </html>
 
 
