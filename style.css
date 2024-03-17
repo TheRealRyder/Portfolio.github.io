@@ -373,6 +373,7 @@ form btn2{
    cursor: pointer 
 }
 .copyright{
+    position: absolute; /* Added */
     width: 100%;
     text-align: center;
     padding: 25px 0;
@@ -380,7 +381,7 @@ form btn2{
     font-weight: 300;
     margin-top: 20px; 
     margin-bottom: 0;
-    position: absolute; /* Added */
+    
     bottom: 0; /* Added */
     left: 0; /* Added */
     margin-top: 0; /* Adjusted */
