@@ -5,11 +5,17 @@
         <title>Eden Ryder Lee's Portfolio</title>
         <link rel="icon" href="images/boy.png" type="image/png">
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="animate.css">
         <style>
             body {font-family: Arial, sans-serif; }
             .container { max-width: 1200px; margin: auto; padding: 20px; }
             header, .intro, .projects, .contact { margin-bottom: 40px; }
         h2 { color: #333; }
+        </style>
+        <style>
+            .animated-item {
+                opacity: 0; /* Make elements invisible initially */
+            }
         </style>
         <script src="https://kit.fontawesome.com/fac4bc31d1.js" crossorigin="anonymous"></script>
     </head>
@@ -28,16 +34,20 @@
                 <li><a href="#contact">Contact</a></li>
                 <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
             </ul>
-            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            <i id="menubars" class="fa-solid fa-bars" onclick="openmenu()"></i>
         </nav>
     </div>
     <div id="header">
         <div class="container">
             
+
             <div class="header-text">
+                <div class="animated-item" data-animation="fadeInLeft"style="animation-duration: 2s;">
                     <p> Web Designer</p>
                     <h1>Hi, I'm <span>Eden Lee</span><br> from Australia</h1>
+                </div>
             </div>
+            
         </div>
     </div>
 
@@ -46,15 +56,27 @@
         <div class="container">
             <div class="row">
                 <div class = "about-col-1">
+                    <div class="animated-item" data-animation="fadeInDown"style="animation-duration: 1s;">
                     <img src="images/user.png">
+                    </div>
                 </div>
                 <div class="about-col-2">
+                    <div class="animated-item" data-animation="fadeInUp"style="animation-duration: 1s;"infinite>
                     <h1>About Me</h1>
+                    
                     <h1 class="sub-title"></h1>
-                    <p>
-                        about me and stuff
-                
-                    </p>
+                    <p><strong>Freelancer | Web design | Australia</strong></p> 
+                </div>
+    <br><br>
+    <div class="animated-item" data-animation="fadeInUp"style="animation-duration: 1s;">
+
+        <p>Welcome to my portfolio! I’m <strong>Eden</strong>, a <strong>Web designer</strong> based in <strong>Australia</strong> with over <strong>4 years</strong> of experience specializing in <strong>Coding</strong>. My journey in <strong>Coding</strong> began with a passion for <strong>technology</strong>, leading me to pursue <strong>all sorts of technology related activities</strong>.</p>
+    <br>      
+    </div>   
+    <div class="animated-item" data-animation="fadeInUp"style="animation-duration: 1s;">      
+        <p>Throughout my career, I’ve had the privilege of working with <strong>various clients</strong>, where I’ve honed my skills in <strong>html and Java</strong>. My portfolio showcases a variety of projects that demonstrate my expertise in <strong>coding</strong>, my ability to solve complex problems, and my commitment to delivering high-quality work.</p>
+    </div>
+            <div class="animated-item" data-animation="fadeInUp"style="animation-duration: 1s;">
                     <div class="tab-titles">
                         <p class = "tab-links active-link" onclick="opentab('skills')">Skills</p>
                         <p class = "tab-links" onclick="opentab('experience')">Experience</p>
@@ -63,50 +85,62 @@
                     <div class="tab-contents active-tab" id="skills" >
                         <ul>
                             <li><span>Web design</span><br> Designing Wep/App interfaces </li>
-                            <li><span>Web design</span><br> Designing Wep/App interfaces </li>
-                            <li><span>Web design</span><br> Designing Wep/App interfaces </li>
+                            <li><span>Java programming</span><br> Designing java applications </li>
+                           <!-- <li><span>Web design</span><br> Designing Wep/App interfaces </li>-->
                         </ul>
                     </div>
                     <div class="tab-contents" id="experience">
                         <ul>
-                            <li><span>Web design</span><br> Designing Wep/App interfaces </li>
-                            <li><span>Web design</span><br> Designing Wep/App interfaces </li>
-                            <li><span>Web design</span><br> Designing Wep/App interfaces </li>
+                            <li><span>Portfolio</span><br> Designing and coding this portfolio </li>
+                            <li><span>Client websites</span><br> Helping various clients with their websites  </li>
+                            <li><span>Client applications</span><br> Creating applications that aid clients work </li>
                         </ul>
                     </div>
                     <div class="tab-contents" id="education">
                         <ul>
-                            <li><span>Queensland Academy of health science</span><br> Designing Wep/App interfaces </li>
-                            <li><span>Web design</span><br> Designing Wep/App interfaces </li>
-                            <li><span>Web design</span><br> Designing Wep/App interfaces </li>
+                            <li><span>International bacculerrate in Queensland academy of health science </span><br> Computer science  </li>
+                            <li><span>Third party education</span><br> Learnt from an experienced software developer </li>
+                            <!--<li><span>Web design</span><br> Designing Wep/App interfaces </li>-->
                         </ul>
                     </div>
+            </div>
             </div>
         </div>
     </div>
 
     <!-----------services---------->
+    
     <div id="services">
+        
         <div class="container">
+            <div class="animated-item" data-animation="fadeInLeft"style="animation-duration: 1s;">
             <h1 class="sub-title">My Services</h1>
+        </div>
             <div class="services-list">
+                
                 <div class="service-titles">
-                    <i class="fa-solid fa-code"></i>
-                    <h2>Web Design</h2>
-                    <p>description for webdesign.</p>
-                    <a href = "#">Learn more</a>
+                    <div class="animated-item" data-animation="fadeInUp"style="animation-duration: 1s;">
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Web Design</h2>
+                        <p>Can develop and maintain websites for clients</p>
+                        <a href = "#">Learn more</a>
+                    </div>
                 </div>
                 <div class="service-titles">
-                    <i class="fa-solid fa-crop"></i>
-                    <h2>UI/UX Design</h2>
-                    <p>description for UI/UX design.</p>
-                    <a href = "#">Learn more</a>
+                        <div class="animated-item" data-animation="fadeInUp"style="animation-duration: 1s;">
+                        <i class="fa-solid fa-crop"></i>
+                        <h2>SEO</h2>
+                        <p>Can help websites reach top search ratings for higher CTR</p>
+                        <a href = "#">Learn more</a>
+                    </div>
                 </div>
                 <div class="service-titles">
-                    <i class="fa-brands fa-app-store-ios"></i>
-                    <h2>App Design</h2>
-                    <p>description for app design.</p>
-                    <a href = "#">Learn more</a>
+                        <div class="animated-item" data-animation="fadeInUp"style="animation-duration: 1s;">
+                        <i class="fa-brands fa-app-store-ios"></i>
+                        <h2>App Design</h2>
+                        <p>Can design java programs for client use</p>
+                        <a href = "#">Learn more</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -115,34 +149,54 @@
     <!----------portfolio------->
     <div id="portfolio">
         <div class="container">
-            <h1 class="sub-title">My Work</h1>
+            <div class="animated-item" data-animation="fadeInLeft"style="animation-duration: 1s;">
+                <h1 class="sub-title">My Work</h1>
+            </div>
             <div class="work-list">
                 <div class="work">
+                    <div class="animated-item" data-animation="fadeInUp"style="animation-duration: 1s;">
                     <img src="images/portfolio-1.png">
                     <div class="layer">
+                        
                         <h3> Portfolio Website</h3>
                         <p>this website is apart of my portfolio</p>
-                        <i class="fa-solid fa-link"></i>
+
+                        <a href="ryderlee.me" class="enlarged-link" target="_blank"></a>
+                        <i class="fa-solid fa-link"></i></a>
+                    </a>
+
                     </div>
                 </div>
+                </div>
                 <div class="work">
+                    <div class="animated-item" data-animation="fadeInUp"style="animation-duration: 1s;">
                     <img src="images/portfolio-2.png">
                     <div class="layer">
+                        
                         <h3> Northstar Mercades website</h3>
                         <p>website I co-designed</p>
+                        <a href="https://jamesformercedes.com/" class="enlarged-link" target="_blank">
                         <i class="fa-solid fa-link"></i>
+                    </a>
                     </div>
                 </div>
+                </div>
                 <div class="work">
+                    <div class="animated-item" data-animation="fadeInUp"style="animation-duration: 1s;">
                     <img src="images/portfolio-3.png">
                     <div class="layer">
                         <h3> Simple House evaluation software </h3>
                         <p>Java program I created for a house valuer which is used to aid in house evaluation</p>
+                        <a href="https://drive.google.com/file/d/18svT2D-mjoOcPcJSPdRzoOnbuyOC2SFa/view?usp=sharing" class="enlarged-link" target="_blank">
                         <i class="fa-solid fa-link"></i>
+                    </a>
                     </div>
                 </div>
+                </div>
             </div>
+            <div class="animated-item" data-animation="fadeInUp"style="animation-duration: 1s;">
             <a href="#" class="btn">See more</a>
+            </div>
         </div>
     </div>
 
@@ -151,38 +205,44 @@
         <div class="container">
             <div class="row">
                 <div class="contact-left">
-                    <h1 Class="sub-title">
-                        Contact Me
-                    </h1>
-                    <p> <i class="fa-solid fa-paper-plane"></i> eden@ryderlee.me</p>
-                    <p><i class="fa-solid fa-phone"></i> 0401708312</p>
+                    <div class="animated-item" data-animation="fadeInLeft"style="animation-duration: 1s;">
+                        <h1 Class="sub-title">
+                            Contact Me
+                        </h1>
+                        <p> <i class="fa-solid fa-paper-plane"></i> eden@ryderlee.me</p>
+                        <p><i class="fa-solid fa-phone"></i> 0401708312</p>
 
-                    <div class="social-icons">
-                        <a href=""><i class="fa-brands fa-instagram"></i></a>
-                   
-                        <a href=""><i class="fa-brands fa-linkedin"></i></i></a>
+                        <div class="social-icons">
+                            <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    
+                            <a href=""><i class="fa-brands fa-linkedin"></i></i></a>
+                        </div>
+                        <!--
+                            <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    
+                    
+                            <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        </div>-->
+                        <a href="" class="btn btn2">Download Cv</a>
                     </div>
-                    <!--
-                        <a href=""><i class="fa-brands fa-instagram"></i></a>
-                   
-                
-                        <a href=""><i class="fa-brands fa-instagram"></i></a>
-                    </div>-->
-                    <a href="" class="btn btn2">Download Cv</a>
                 </div>
                 <div class="contact-right">
+                    <div class="animated-item" data-animation="fadeInRight"style="animation-duration: 1s;">
                     <form name="submit-to-google-sheet">
                         <input type="text" name="Name" placeholder="Your Name" required>
                         <input type="email" name="Email" placeholder="your Email" required>
                         <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
                         <button type="submit" class="btn btn2"> Submit </button>
                     </form>
+                    </div>
                     <span id="msg"></span>
                 </div>
             </div>
         </div>
+        <div class="animated-item" data-animation="fadeInUp"style="animation-duration: 1s;">
         <div class="copyright">
             <p>Copyright © 2024 Eden Lee </p>
+            </div>
         </div>
     </div>
 
@@ -206,11 +266,15 @@
     var sidemenu = document.getElementById("sidemenu");
 
     function openmenu(){
-        sidemenu.style.width = "200px"
+        sidemenu.style.width = "200px";
         sidemenu.style.right = "0px";
+        menubars.style.right = "-200px";
+        
     }
     function closemenu(){
         sidemenu.style.right = "-200px";
+        menubars.style.right = "40px";
+        
     }
 </script>
 <!--google sheets-->
@@ -233,6 +297,38 @@
     })
   </script>
 
+  <script>
+    // Function to check if element is in viewport
+    function isInViewport(element) {
+        const rect = element.getBoundingClientRect();
+        return (
+            rect.top >= 0 &&
+            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight)
+        );
+    }
+    
+    // Add the animation class when the element is in the viewport
+    function addAnimationOnScroll() {
+        const elements = document.querySelectorAll('.animated-item');
+    
+        for (const element of elements) {
+            if (isInViewport(element) && !element.classList.contains('animated')) {
+                const animationName = element.getAttribute('data-animation');
+                element.classList.add(animationName);
+                element.style.opacity = 1; // Make element visible
+            }
+        }
+    }
+    
+    // Listen for scroll and resize events
+    window.addEventListener('scroll', addAnimationOnScroll);
+    window.addEventListener('resize', addAnimationOnScroll);
+    
+    // Check on initial load
+    addAnimationOnScroll();
+    </script>
+    
+    
 </body>
 </html>
 
