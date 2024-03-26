@@ -20,7 +20,7 @@ html{
     top: 0;
     left: 0;
     z-index: 1;
-    background-image: url(images/background-image.png);
+    background-image: url(../images/background-image.png);
     background-size: cover; 
     background-position: center;
 }
@@ -310,6 +310,9 @@ nav ul li a:hover::after{
     display: inline-block;
     text-align: center;
 }
+.hidden {
+    display: none;
+}
 a.enlarged-link {
     padding: 100px; /* Increase clickable area */
     margin: -80px; /* Counteract the visual space added by padding */
@@ -405,7 +408,7 @@ nav .fa-solid{
 
 @media only screen and (max-width: 600px){
     #header{
-        background-image: url(images/small-background.png);
+        background-image: url(../images/small-background.png);
     }
     .header-text{
         margin-top: 100%;
