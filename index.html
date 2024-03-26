@@ -4,8 +4,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Eden Ryder Lee's Portfolio</title>
         <link rel="icon" href="images/boy.png" type="image/png">
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="animate.css">
+        <link rel="stylesheet" href="css\style.css">
+        <link rel="stylesheet" href="css\animate.css">
         <style>
             body {font-family: Arial, sans-serif; }
             .container { max-width: 1200px; margin: auto; padding: 20px; }
@@ -43,7 +43,7 @@
 
             <div class="header-text">
                 <div class="animated-item" data-animation="fadeInLeft"style="animation-duration: 2s;">
-                    <p> Web Designer</p>
+                    <p> UI/UX designer</p>
                     <h1>Hi, I'm <span>Eden Lee</span><br> from Australia</h1>
                 </div>
             </div>
@@ -117,31 +117,35 @@
             <h1 class="sub-title">My Services</h1>
         </div>
             <div class="services-list">
-                
+            <div class="animated-item" data-animation="fadeInUp"style="animation-duration: 1s;">
+
                 <div class="service-titles">
-                    <div class="animated-item" data-animation="fadeInUp"style="animation-duration: 1s;">
                         <i class="fa-solid fa-code"></i>
                         <h2>Web Design</h2>
                         <p>Can develop and maintain websites for clients</p>
-                        <a href = "#">Learn more</a>
-                    </div>
+                        <a href = "subpages\webdesign.html">Learn more</a>
+                    
                 </div>
+            </div>
+            <div class="animated-item" data-animation="fadeInUp"style="animation-duration: 1s;">
+
                 <div class="service-titles">
-                        <div class="animated-item" data-animation="fadeInUp"style="animation-duration: 1s;">
                         <i class="fa-solid fa-crop"></i>
                         <h2>SEO</h2>
                         <p>Can help websites reach top search ratings for higher CTR</p>
-                        <a href = "#">Learn more</a>
-                    </div>
+                        <a href = "subpages\seo.html">Learn more</a>
+                    
                 </div>
+            </div>
+            <div class="animated-item" data-animation="fadeInUp"style="animation-duration: 1s;">
                 <div class="service-titles">
-                        <div class="animated-item" data-animation="fadeInUp"style="animation-duration: 1s;">
                         <i class="fa-brands fa-app-store-ios"></i>
                         <h2>App Design</h2>
                         <p>Can design java programs for client use</p>
-                        <a href = "#">Learn more</a>
-                    </div>
+                        <a href = "subpages\appdesign.html">Learn more</a>
+                    
                 </div>
+            </div>
             </div>
         </div>
     </div>
@@ -175,7 +179,7 @@
                         
                         <h3> Northstar Mercades website</h3>
                         <p>website I co-designed</p>
-                        <a href="https://jamesformercedes.com/" class="enlarged-link" target="_blank">
+                        <a href="https://www.northcoaststarmercedes.com.au/" class="enlarged-link" target="_blank">
                         <i class="fa-solid fa-link"></i>
                     </a>
                     </div>
@@ -194,8 +198,50 @@
                 </div>
                 </div>
             </div>
+            <div class="work-list hidden" id="more-works">
+                <div class="work">
+                    <div class="animated-item" data-animation="fadeInUp"style="animation-duration: 1s;">
+                    <img src="">
+                    <div class="layer">
+                        
+                        <h3> TBA</h3>
+                        <p>  </p>
+
+                        <a href="" class="enlarged-link" target="_blank"></a>
+                        <i class="fa-solid fa-link"></i></a>
+                    </a>
+
+                    </div>
+                </div>
+                </div>
+                <div class="work">
+                    <div class="animated-item" data-animation="fadeInUp"style="animation-duration: 1s;">
+                    <img src="">
+                    <div class="layer">
+                        
+                        <h3> TBA</h3>
+                        <p>   </p>
+                        <a href="" class="enlarged-link" target="_blank">
+                        <i class="fa-solid fa-link"></i>
+                    </a>
+                    </div>
+                </div>
+                </div>
+                <div class="work">
+                    <div class="animated-item" data-animation="fadeInUp"style="animation-duration: 1s;">
+                    <img src="">
+                    <div class="layer">
+                        <h3> TBA </h3>
+                        <p>    </p>
+                        <a href="" class="enlarged-link" target="_blank">
+                        <i class="fa-solid fa-link"></i>
+                    </a>
+                    </div>
+                </div>
+                </div>
+            </div>
             <div class="animated-item" data-animation="fadeInUp"style="animation-duration: 1s;">
-            <a href="#" class="btn">See more</a>
+            <a href="#" class="btn" id="see-more-btn">See more</a>
             </div>
         </div>
     </div>
@@ -213,9 +259,9 @@
                         <p><i class="fa-solid fa-phone"></i> 0401708312</p>
 
                         <div class="social-icons">
-                            <a href=""><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.instagram.com/ryderlee_me?igsh=Z2FwNnRuemhmazZr&utm_source=qr" target="_blank"><i class="fa-brands fa-instagram"></i></a>
                     
-                            <a href=""><i class="fa-brands fa-linkedin"></i></i></a>
+                            <a href="https://www.linkedin.com/in/eden-lee-6016a4300/"target="_blank"><i class="fa-brands fa-linkedin"></i></i></a>
                         </div>
                         <!--
                             <a href=""><i class="fa-brands fa-instagram"></i></a>
@@ -223,7 +269,7 @@
                     
                             <a href=""><i class="fa-brands fa-instagram"></i></a>
                         </div>-->
-                        <a href="" class="btn btn2">Download Cv</a>
+                        <a href="" class="btn btn2" onclick="showUnavailableMessage()">Download Cv</a>
                     </div>
                 </div>
                 <div class="contact-right">
@@ -329,6 +375,24 @@
     addAnimationOnScroll();
     </script>
     
+    <script>
+        function showUnavailableMessage(){
+            alert("Unavailable at the moment");
+        }
+    </script>
+    <script>
+        document.getElementById('see-more-btn').addEventListener('click', function(e) {
+            e.preventDefault();
+            var moreWorks = document.getElementById('more-works');
+            if (moreWorks.classList.contains("hidden")) {
+                moreWorks.classList.remove('hidden');
+                this.textContent = 'see less';
+            } else {
+                moreWorks.classList.add('hidden');
+                this.textContent = 'see more';
+            }
+        });
+    </script>
     
 </body>
 </html>
